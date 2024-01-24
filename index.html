@@ -10,13 +10,15 @@
 </head>
 <body>
   
+  <div class="filter dissapear"></div>
+
   <nav class="nav">
     <img src="./assets/images/logo.svg" alt="logo">
 
-    <img class="menu-icon" src="./assets/images/icon-menu.svg" alt="menu">
+    <img class="menu-icon" src="./assets/images/icon-menu.svg" alt="menu" onclick="openMenu()">
 
     <div class="navlist-cont">
-      <img class="dissapear" src="./assets/images/icon-menu-close.svg" alt="close menu">
+      <img id="close-menu" class="dissapear" src="./assets/images/icon-menu-close.svg" alt="close menu" onclick="closeMenu()">
 
       <ul class="navlist">
         <li>Home</li>
