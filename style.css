@@ -7,19 +7,140 @@
 }
 
 body {
-    padding: 40px;
+    padding: 22px 100px;
+}
+
+p {
+    font-size: .9rem;
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
 }
 
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .navlist {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: auto;
     list-style: none;
+}
+.navlist li {
+    padding: 4px 12px;
+    cursor: pointer;
+}
+.navlist li:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.principal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    column-gap: 32px;
+    row-gap: 32px;
+}
+
+.principal-image {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.principal-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 20px;
+}
+.news-aside h3 {
+    font-size: 2rem;
+    color: hsl(35, 77%, 62%);
+}
+
+.new {
+    padding-bottom: 32px;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+.new h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.new h4:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.sub-news1 h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 3rem;
+}
+
+.sub-news2 {
+    position: relative;
+}
+p {
+    font-size: .9rem;
+    font-weight: 400;
+}
+.sub-news2 button {
+    width: 180px;
+    height: 36px;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 4px;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+}
+
+.sub-news2 button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.down-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+}
+
+.top-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.top-card img {
+    width: 90px;
+}
+.top-card h3 {
+    font-size: 1.6rem;
+    color: hsl(233, 8%, 79%);
+}
+
+.top-card h4:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
 }
